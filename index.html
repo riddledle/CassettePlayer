@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+        <title>shi-shi.net VOCALOID Featured Tape</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/knobKnob.css" />
+        <style>
+            .container{
+                min-width: 1140px !important;
+            }
+            .text-center{
+                text-align: center;
+            }
+            .brand-font{
+                font-family: 'Aldrich';
+                color: #666;
+                text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+            }
+            .hidden{
+                display: none;
+            }
+            .col{
+                float: left;
+            }
+            .col-50{
+                width: 50%;
+            }
+            .col-60{
+                width: 60%;
+            }
+            .col-40{
+                width: 40%;
+            }
+        </style>
+        <link href='http://fonts.useso.com/css?family=Aldrich' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
+    </head>
+    <body>
+        <div class="container">
+		
+			
+			<header>
+
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<span class="no-cssanimations">CSS animations are not supported in your browser</span>
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+            <h1 class="brand-font text-center">shi-shi.net VOCALOID Featured Tape</h1>
+            <div class="row">
+                <div class="col col-60">
+                    <h2 class="hidden">古典卡带播放器</h2>
+                    <div id="vc-container" class="vc-container">
+				<div class="vc-tape-wrapper">
+					<div class="vc-tape">
+						<div class="vc-tape-back">
+							<div class="vc-tape-wheel vc-tape-wheel-left"><div></div></div>
+							<div class="vc-tape-wheel vc-tape-wheel-right"><div></div></div>
+						</div>
+						<div class="vc-tape-front vc-tape-side-a">
+							<span>A</span>
+						</div>
+						<div class="vc-tape-front vc-tape-side-b">
+							<span>B</span>
+						</div>
+					</div>
+				</div>
+				<div class="vc-loader"></div>
+			</div><!-- //vc-container -->
+                </div>
+                <div class="col col-40 brand-font">
+                    <h2>雄之助 Featured Tape</h2>
+                    <h3>A面</h3>
+                    <ol>
+                        <li>【GUMI】Landslide【オリジナル曲】</li>
+                        <li>【GUMI English】ECHO(Yunosuke Remix)</li>
+                        <li>【初音ミク】Take Me!!(2016 Remix)</li>
+                    </ol>
+                    <h3>B面</h3>
+                    <ol>
+                        <li>【初音ミク】Lovin' you【オリジナル曲】</li>
+                        <li>【初音ミク】This Again【オリジナル曲】</li>
+                        <li>【初音ミク】頂のノア【オリジナル曲】</li>
+                    </ol>
+                </div>
+            </div>
+		</div><!-- //container -->
+		
+		<script type="text/javascript" src="http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!-- KnobKnob by Martin Angelov : https://github.com/martinaglv/KnobKnob -->
+		<script src="js/transform.js"></script>
+		<script src="js/knobKnob.jquery.js"></script>
+
+		<script type="text/javascript" src="js/jquery.cassette.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+				$( '#vc-container' ).cassette({
+                    songs:[
+                        {
+                            sources:{
+                                mp3:"http://125.211.202.141:8023/?cmd=file&name=sm28591503.mp3"
+                            }
+                        },
+                        {
+                            sources:{
+                                mp3:"http://125.211.202.141:8023/?cmd=file&name=sm28571989.mp3"
+                            }
+                        },
+                        {
+                            sources:{
+                                mp3:"http://125.211.202.141:8023/?cmd=file&name=sm28239601.mp3"
+                            }
+                        },
+                        {
+                            sources:{
+                                mp3:"http://125.211.202.141:8023/?cmd=file&name=sm28146093.mp3"
+                            }
+                        },
+                        {
+                            sources:{
+                                mp3:"http://125.211.202.141:8023/?cmd=file&name=sm27804554.mp3"
+                            }
+                        },
+                        {
+                            sources:{
+                                mp3:"http://125.211.202.141:8023/?cmd=file&name=sm27678889.mp3"
+                            }
+                        }
+                    ]
+                });
+            });
+		</script>
+    </body>
+</html>
