@@ -82,7 +82,7 @@
 			// the options
 			this.options		= $.extend(false, {}, $.Cassette.defaults, options );
 			
-            console.log(this.options);
+            //console.log(this.options);
             
 			// current side of the tape
 			this.currentSide	= 1;
